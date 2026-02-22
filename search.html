@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Products – Style Fusion</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="description" content="Search for products at Style Fusion.">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Style Fusion</h1>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="cart-icon-wrap">
+        <a href="cart.html" title="Cart">🛒</a>
+        <span class="cart-badge">0</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productview.html">Shop</a></li>
+      <li><a href="product.html">Categories</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search for products..." oninput="filterProducts()" autofocus>
+  </div>
+
+  <p id="resultCount" style="text-align:center;color:#888;margin:0 0 16px;"></p>
+
+  <div class="product-list" id="productList">
+    <div class="product" data-name="Men's Shirt">
+      <img src="assets/images/cart1.jpeg" alt="Men's Shirt" loading="lazy">
+      <h4>Men's Shirt</h4>
+      <p>₹499</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Men\'s Shirt', 499, 'assets/images/cart1.jpeg')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Women's Jacket">
+      <img src="assets/images/womenjacket.webp" alt="Women's Jacket" loading="lazy">
+      <h4>Women's Jacket</h4>
+      <p>₹799</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Jacket', 799, 'assets/images/womenjacket.webp')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Sneakers Running Shoes">
+      <img src="assets/images/search3.webp" alt="Sneakers" loading="lazy">
+      <h4>Running Sneakers</h4>
+      <p>₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Running Sneakers', 999, 'assets/images/search3.webp')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Rose Gold Watch Women">
+      <img src="assets/images/watch1.jpeg" alt="Rose Gold Watch" loading="lazy">
+      <h4>Rose Gold Watch</h4>
+      <p>₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Rose Gold Watch', 999, 'assets/images/watch1.jpeg')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Stylish Sneakers Women">
+      <img src="assets/images/latest1.webp" alt="Stylish Sneakers" loading="lazy">
+      <h4>Stylish Sneakers</h4>
+      <p>₹1299</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Stylish Sneakers', 1299, 'assets/images/latest1.webp')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Green Dial Watch Analog">
+      <img src="assets/images/latest2.webp" alt="Green Dial Watch" loading="lazy">
+      <h4>Green Dial Analog Watch</h4>
+      <p>₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Green Dial Analog Watch', 999, 'assets/images/latest2.webp')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Beige Hoodie Unisex">
+      <img src="assets/images/latest3.jpg" alt="Beige Hoodie" loading="lazy">
+      <h4>Beige Hoodie Unisex</h4>
+      <p>₹899</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Beige Hoodie Unisex', 899, 'assets/images/latest3.jpg')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Women Cotton Casual Wear">
+      <img src="assets/images/clothes2.jpeg" alt="Women's Cotton Casual Wear" loading="lazy">
+      <h4>Women's Cotton Casual Wear</h4>
+      <p>₹399</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Cotton Casual Wear', 399, 'assets/images/clothes2.jpeg')">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Wrist Watch Men">
+      <img src="assets/images/search1.jpeg" alt="Wrist Watch for Men" loading="lazy">
+      <h4>Wrist Watch for Men</h4>
+      <p>₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Wrist Watch for Men', 999, 'assets/images/search1.jpeg')">Add to Cart</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
+</footer>
+
+<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<script src="script.js"></script>
+<script>
+  function filterProducts() {
+    const q = document.getElementById('search-bar').value.toLowerCase();
+    const products = document.querySelectorAll('.product[data-name]');
+    let visible = 0;
+    products.forEach(p => {
+      const match = p.dataset.name.toLowerCase().includes(q);
+      p.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+    const rc = document.getElementById('resultCount');
+    rc.textContent = q ? `${visible} result${visible !== 1 ? 's' : ''} found for "${q}"` : '';
+  }
+</script>
+</body>
+</html>

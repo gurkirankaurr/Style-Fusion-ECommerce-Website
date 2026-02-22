@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Style Fusion</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="description" content="Contact Style Fusion – We're here to help!">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Style Fusion</h1>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="cart-icon-wrap">
+        <a href="cart.html" title="Cart">🛒</a>
+        <span class="cart-badge">0</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productview.html">Shop</a></li>
+      <li><a href="product.html">Categories</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="contact-us-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need help, feel free to reach out to us!</p>
+
+    <div class="contact-details">
+      <div class="contact-info">
+        <h3>Our Store</h3>
+        <p><strong>Address:</strong> 123 Style Fusion, New Delhi, 110018</p>
+        <p><strong>Phone:</strong> <a href="tel:+11234567890">+1 123 456 7890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:support@stylefusion.com">support@stylefusion.com</a></p>
+        <p><strong>Hours:</strong> Mon – Sat, 9 AM – 6 PM</p>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" onsubmit="return validateContactForm()">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" required placeholder="Your full name">
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" required placeholder="you@email.com">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" rows="5" required placeholder="How can we help you?"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
+</footer>
+
+<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

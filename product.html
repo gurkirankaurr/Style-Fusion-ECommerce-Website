@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories – Style Fusion</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="description" content="Browse all categories at Style Fusion – Clothes, Watches, Sneakers.">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Style Fusion</h1>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="cart-icon-wrap">
+        <a href="cart.html" title="Cart">🛒</a>
+        <span class="cart-badge">0</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productview.html">Shop</a></li>
+      <li><a href="product.html">Categories</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="categories-section">
+  <h2>Shop by Category</h2>
+  <div class="category-list">
+    <div class="category-item">
+      <img src="assets/images/clothes.jpeg" alt="Clothes" loading="lazy">
+      <h3>Clothes</h3>
+      <a href="clothes.html" class="shop-now">Shop Now</a>
+    </div>
+    <div class="category-item">
+      <img src="assets/images/watch.jpeg" alt="Watches" loading="lazy">
+      <h3>Watches</h3>
+      <a href="watches.html" class="shop-now">Shop Now</a>
+    </div>
+    <div class="category-item">
+      <img src="assets/images/shoes.jpeg" alt="Sneakers" loading="lazy">
+      <h3>Sneakers</h3>
+      <a href="sneakers.html" class="shop-now">Shop Now</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
+</footer>
+
+<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
