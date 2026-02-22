@@ -104,15 +104,15 @@ nav ul li a:hover { background-color: #555; }
 /* ── Slider ── */
 .slider {
   position: relative; overflow: hidden;
-  width: 100%; background: #000;
-  max-height: 480px;
+  width: 100%; background: #f4f4f4;
 }
 .slider-track {
   display: flex; transition: transform 0.5s ease;
 }
 .slider-track img {
   min-width: 100%; width: 100%;
-  height: 480px; object-fit: cover; object-position: center top; flex-shrink: 0;
+  height: 460px; object-fit: contain; object-position: center center; flex-shrink: 0;
+  background: #f4f4f4;
 }
 .slider-btn {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -132,7 +132,7 @@ nav ul li a:hover { background-color: #555; }
 .slider-dots span.active { background: #fff; }
 
 @media (max-width: 600px) {
-  .slider-track img { height: 220px; }
+  .slider-track img { height: 220px; object-fit: contain; }
 }
 
 /* ── Shop by Category ── */
