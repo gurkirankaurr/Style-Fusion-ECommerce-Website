@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Style Fusion – Fashion Store</title>
+  <title>Style Fusion – Luxury Fashion Store</title>
   <link rel="stylesheet" href="index.css">
-  <meta name="description" content="Style Fusion - The best place to buy clothes, watches, and shoes online.">
+  <meta name="description" content="Style Fusion - Premium fashion for clothes, watches, and shoes.">
 </head>
 <body>
 
-<!-- ── Header ── -->
 <header>
   <div class="header-top">
     <h1>Style Fusion</h1>
-    <div class="header-right" style="display:flex;align-items:center;gap:16px;">
+    <div style="display:flex;align-items:center;gap:20px;">
       <div class="cart-icon-wrap">
         <a href="cart.html" title="Cart">🛒</a>
         <span class="cart-badge">0</span>
@@ -30,91 +29,135 @@
       <li><a href="product.html">Categories</a></li>
       <li><a href="contactus.html">Contact Us</a></li>
       <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="cart.html">Cart <span class="cart-badge" style="position:relative;top:-1px;right:0;background:#ff6600;color:#fff;border-radius:50%;font-size:0.7rem;padding:1px 5px;display:none;">0</span></a></li>
+      <li><a href="cart.html">Cart</a></li>
       <li><a href="search.html">Search</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- ── Hero Slider ── -->
+<!-- Hero Slider -->
 <div class="slider">
   <div class="slider-track" id="sliderTrack">
-    <img src="assets/images/slider1.webp" alt="Fashion Sale" loading="lazy">
+    <img src="assets/images/slider1.webp" alt="New Collection" loading="eager">
     <img src="assets/images/slider2.jpg" alt="New Arrivals" loading="lazy">
     <img src="assets/images/slider3.avif" alt="Trending Styles" loading="lazy">
     <img src="assets/images/slider4.jpeg" alt="Shop Now" loading="lazy">
   </div>
-  <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">&#8249;</button>
-  <button class="slider-btn next" id="nextBtn" aria-label="Next slide">&#8250;</button>
+  <button class="slider-btn prev" id="prevBtn" aria-label="Previous">&#8249;</button>
+  <button class="slider-btn next" id="nextBtn" aria-label="Next">&#8250;</button>
   <div class="slider-dots" id="sliderDots"></div>
 </div>
 
-<!-- ── Shop by Category ── -->
+<!-- Shop by Category -->
 <section id="shop-by-category">
-  <h2>Shop by Category</h2>
+  <div class="section-title">
+    <h2>Shop by Category</h2>
+    <div class="title-line"></div>
+    <p>Curated collections for every style</p>
+  </div>
   <div class="categories">
     <a href="clothes.html" class="category">
-      <img src="assets/images/shopby1.jpg" alt="Women Fashion" loading="lazy">
-      <h3>Women</h3>
+      <img src="assets/images/shopby1.jpg" alt="Women" loading="lazy">
+      <div class="category-overlay">
+        <h3>Women</h3>
+        <span>Explore Collection →</span>
+      </div>
     </a>
     <a href="clothes.html" class="category">
-      <img src="assets/images/shopby2.webp" alt="Men Fashion" loading="lazy">
-      <h3>Men</h3>
+      <img src="assets/images/shopby2.webp" alt="Men" loading="lazy">
+      <div class="category-overlay">
+        <h3>Men</h3>
+        <span>Explore Collection →</span>
+      </div>
     </a>
     <a href="watches.html" class="category">
       <img src="assets/images/shopby3.jpeg" alt="Watches" loading="lazy">
-      <h3>Watches</h3>
+      <div class="category-overlay">
+        <h3>Watches</h3>
+        <span>Explore Collection →</span>
+      </div>
     </a>
     <a href="sneakers.html" class="category">
       <img src="assets/images/shopby4.jpg" alt="Sneakers" loading="lazy">
-      <h3>Sneakers</h3>
+      <div class="category-overlay">
+        <h3>Sneakers</h3>
+        <span>Explore Collection →</span>
+      </div>
     </a>
   </div>
 </section>
 
-<!-- ── Latest Products ── -->
+<!-- Latest Products -->
 <section id="latest-products">
-  <h2>Latest Products</h2>
+  <div class="section-title">
+    <h2>Latest Arrivals</h2>
+    <div class="title-line"></div>
+    <p>Fresh styles, just in</p>
+  </div>
   <div class="products">
+
     <div class="product">
-      <img src="assets/images/latest1.webp" alt="Stylish Sneakers" loading="lazy">
-      <h3>Stylish Sneakers Shoes for Women</h3>
-      <p>₹1299</p>
-      <a href="product1.html" class="view-product-button">View Product</a>
-      <button class="add-to-cart-btn" onclick="addToCart('Stylish Sneakers for Women', 1299, 'assets/images/latest1.webp')">Add to Cart</button>
+      <div class="product-img-wrap">
+        <span class="product-tag">New</span>
+        <img src="assets/images/latest1.webp" alt="Stylish Sneakers" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h3>Stylish Sneakers for Women</h3>
+        <div class="product-price">₹1,299</div>
+        <div class="product-actions">
+          <a href="product1.html" class="view-product-button">View</a>
+          <button class="add-to-cart-btn" onclick="addToCart('Stylish Sneakers for Women', 1299, 'assets/images/latest1.webp')">Add to Cart</button>
+        </div>
+      </div>
     </div>
+
     <div class="product">
-      <img src="assets/images/latest2.webp" alt="Analog Watch" loading="lazy">
-      <h3>Green Dial &amp; Leather Strap Analog Watch</h3>
-      <p>₹999</p>
-      <a href="product2.html" class="view-product-button">View Product</a>
-      <button class="add-to-cart-btn" onclick="addToCart('Green Dial Analog Watch', 999, 'assets/images/latest2.webp')">Add to Cart</button>
+      <div class="product-img-wrap">
+        <span class="product-tag">Trending</span>
+        <img src="assets/images/latest2.webp" alt="Analog Watch" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h3>Green Dial &amp; Leather Strap Watch</h3>
+        <div class="product-price">₹999</div>
+        <div class="product-actions">
+          <a href="product2.html" class="view-product-button">View</a>
+          <button class="add-to-cart-btn" onclick="addToCart('Green Dial Analog Watch', 999, 'assets/images/latest2.webp')">Add to Cart</button>
+        </div>
+      </div>
     </div>
+
     <div class="product">
-      <img src="assets/images/latest3.jpg" alt="Beige Hoodie" loading="lazy">
-      <h3>Beige Hoodie Unisex</h3>
-      <p>₹899</p>
-      <a href="product3.html" class="view-product-button">View Product</a>
-      <button class="add-to-cart-btn" onclick="addToCart('Beige Hoodie Unisex', 899, 'assets/images/latest3.jpg')">Add to Cart</button>
+      <div class="product-img-wrap">
+        <img src="assets/images/latest3.jpg" alt="Beige Hoodie" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h3>Beige Hoodie Unisex</h3>
+        <div class="product-price">₹899</div>
+        <div class="product-actions">
+          <a href="product3.html" class="view-product-button">View</a>
+          <button class="add-to-cart-btn" onclick="addToCart('Beige Hoodie Unisex', 899, 'assets/images/latest3.jpg')">Add to Cart</button>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- ── Features ── -->
+<!-- Features -->
 <section id="features">
-  <h2>Features</h2>
+  <div class="section-title">
+    <h2>Why Style Fusion</h2>
+    <div class="title-line"></div>
+  </div>
   <div class="features-grid">
 
-    <!-- Reviews -->
     <div class="feature">
-      <h3>⭐ Product Reviews</h3>
+      <h3>⭐ Customer Reviews</h3>
       <div class="review-form">
-        <h5>Write a Review</h5>
         <form id="reviewForm" onsubmit="return submitReview()">
-          <label for="reviewName">Your Name:</label>
+          <label for="reviewName">Your Name</label>
           <input type="text" id="reviewName" required placeholder="Enter your name">
-
-          <label for="rating">Rating:</label>
+          <label for="rating">Rating</label>
           <select id="rating" required>
             <option value="5">★★★★★ – Excellent</option>
             <option value="4">★★★★☆ – Good</option>
@@ -122,51 +165,46 @@
             <option value="2">★★☆☆☆ – Poor</option>
             <option value="1">★☆☆☆☆ – Terrible</option>
           </select>
-
-          <label for="review">Your Review:</label>
-          <textarea id="review" rows="4" placeholder="Share your experience..."></textarea>
-
+          <label for="review">Your Review</label>
+          <textarea id="review" rows="3" placeholder="Share your experience..."></textarea>
           <button type="submit">Submit Review</button>
         </form>
       </div>
       <div class="reviews-list">
-        <h5>Customer Reviews:</h5>
         <div id="reviewsContainer"></div>
       </div>
     </div>
 
-    <!-- Security -->
     <div class="feature">
       <h3>🔒 Secure Payments</h3>
-      <p>Accepted Payment Methods</p>
-      <img src="assets/images/Gpay.png" alt="Google Pay" loading="lazy" style="display:inline-block;">
-      <img src="assets/images/paytm.png" alt="Paytm" loading="lazy" style="display:inline-block;">
-      <img src="assets/images/phonepe.png" alt="PhonePe" loading="lazy" style="display:inline-block;">
+      <p>All transactions are encrypted and secure. We accept multiple payment methods for your convenience.</p>
+      <div style="margin-top:16px;">
+        <img src="assets/images/Gpay.png" alt="Google Pay" style="display:inline-block;width:48px;margin:4px 6px;">
+        <img src="assets/images/paytm.png" alt="Paytm" style="display:inline-block;width:48px;margin:4px 6px;">
+        <img src="assets/images/phonepe.png" alt="PhonePe" style="display:inline-block;width:48px;margin:4px 6px;">
+      </div>
     </div>
 
-    <!-- Support -->
     <div class="feature">
       <h3>📞 Customer Support</h3>
-      <p>Have questions? We're here to help!</p>
-      <p><strong>Phone:</strong> <a href="tel:+11234567890">+1 123 456 7890</a></p>
-      <p><strong>Email:</strong> <a href="mailto:support@stylefusion.com">support@stylefusion.com</a></p>
-      <p><strong>Hours:</strong> Mon – Sat, 9 AM – 6 PM</p>
+      <p style="margin-bottom:14px;">Our team is available Monday to Saturday to assist you with any questions.</p>
+      <p><strong style="color:var(--gold-light);">Phone:</strong> <a href="tel:+11234567890">+1 123 456 7890</a></p>
+      <p style="margin-top:8px;"><strong style="color:var(--gold-light);">Email:</strong> <a href="mailto:support@stylefusion.com">support@stylefusion.com</a></p>
+      <p style="margin-top:8px;"><strong style="color:var(--gold-light);">Hours:</strong> Mon – Sat, 9 AM – 6 PM</p>
     </div>
 
   </div>
 </section>
 
-<!-- ── Footer ── -->
 <footer>
-  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
+  <p>&copy; 2024 Style Fusion. All rights reserved. Crafted with care.</p>
 </footer>
 
-<!-- Scroll to Top -->
-<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<button id="scrollToTop" onclick="scrollToTop()" title="Back to top" style="display:none;">↑</button>
 
 <script src="script.js"></script>
 <script>
-  // ── Slider Logic ──
+  // Slider
   const track = document.getElementById('sliderTrack');
   const imgs = track.querySelectorAll('img');
   const dotsContainer = document.getElementById('sliderDots');
@@ -175,21 +213,20 @@
   imgs.forEach((_, i) => {
     const dot = document.createElement('span');
     if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goTo(i));
+    dot.addEventListener('click', () => { clearInterval(timer); goTo(i); startAuto(); });
     dotsContainer.appendChild(dot);
   });
 
   function goTo(n) {
     current = (n + imgs.length) % imgs.length;
     track.style.transform = `translateX(-${current * 100}%)`;
-    document.querySelectorAll('.slider-dots span').forEach((d, i) =>
-      d.classList.toggle('active', i === current));
+    document.querySelectorAll('.slider-dots span').forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
   document.getElementById('prevBtn').addEventListener('click', () => { clearInterval(timer); goTo(current - 1); startAuto(); });
   document.getElementById('nextBtn').addEventListener('click', () => { clearInterval(timer); goTo(current + 1); startAuto(); });
 
-  function startAuto() { timer = setInterval(() => goTo(current + 1), 4000); }
+  function startAuto() { timer = setInterval(() => goTo(current + 1), 4500); }
   startAuto();
 </script>
 </body>

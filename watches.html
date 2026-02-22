@@ -1,77 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watches – Style Fusion</title>
   <link rel="stylesheet" href="index.css">
-  <meta name="description" content="Browse our Watches collection at Style Fusion.">
 </head>
 <body>
-
 <header>
   <div class="header-top">
     <h1>Style Fusion</h1>
-    <div style="display:flex;align-items:center;gap:16px;">
-      <div class="cart-icon-wrap">
-        <a href="cart.html" title="Cart">🛒</a>
-        <span class="cart-badge">0</span>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div class="cart-icon-wrap"><a href="cart.html">🛒</a><span class="cart-badge">0</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav>
-    <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productview.html">Shop</a></li>
-      <li><a href="product.html">Categories</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="search.html">Search</a></li>
-    </ul>
-  </nav>
+  <nav><ul id="nav-menu">
+    <li><a href="index.html">Home</a></li><li><a href="productview.html">Shop</a></li>
+    <li><a href="product.html">Categories</a></li><li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="aboutus.html">About Us</a></li><li><a href="cart.html">Cart</a></li><li><a href="search.html">Search</a></li>
+  </ul></nav>
 </header>
 
+<div class="page-hero"><h2>Watches</h2><p>Timeless elegance on your wrist</p></div>
+
 <main>
-  <div class="categories-section">
-    <h2>Watches</h2>
-  </div>
   <div class="product-grid">
     <div class="product-item">
       <img src="assets/images/watch1.jpeg" alt="Rose Gold Watch" loading="lazy">
-      <h3>Rose Gold Watch for Women</h3>
-      <p class="price">₹999</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Rose Gold Watch for Women', 999, 'assets/images/watch1.jpeg')">Add to Cart</button>
+      <h3>Rose Gold Watch for Women</h3><p class="price">₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Rose Gold Watch for Women',999,'assets/images/watch1.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/watch2.jpeg" alt="Gold Quartz Watch" loading="lazy">
-      <h3>Gold Quartz Watch</h3>
-      <p class="price">₹899</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Gold Quartz Watch', 899, 'assets/images/watch2.jpeg')">Add to Cart</button>
+      <h3>Gold Quartz Watch</h3><p class="price">₹899</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Gold Quartz Watch',899,'assets/images/watch2.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/search1.jpeg" alt="Wrist Watch for Men" loading="lazy">
-      <h3>Wrist Watch for Men</h3>
-      <p class="price">₹999</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Wrist Watch for Men', 999, 'assets/images/search1.jpeg')">Add to Cart</button>
+      <h3>Wrist Watch for Men</h3><p class="price">₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Wrist Watch for Men',999,'assets/images/search1.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/latest2.webp" alt="Green Dial Analog Watch" loading="lazy">
-      <h3>Green Dial Analog Watch</h3>
-      <p class="price">₹999</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Green Dial Analog Watch', 999, 'assets/images/latest2.webp')">Add to Cart</button>
+      <h3>Green Dial Analog Watch</h3><p class="price">₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Green Dial Analog Watch',999,'assets/images/latest2.webp')">Add to Cart</button>
     </div>
   </div>
 </main>
 
-<footer>
-  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
-</footer>
-
-<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<footer><p>&copy; 2024 Style Fusion. All rights reserved.</p></footer>
+<button id="scrollToTop" onclick="scrollToTop()" style="display:none;">↑</button>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>

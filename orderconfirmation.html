@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order Confirmed – Style Fusion</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
 <header>
   <div class="header-top">
     <h1>Style Fusion</h1>
-    <div style="display:flex;align-items:center;gap:16px;">
-      <div class="cart-icon-wrap">
-        <a href="cart.html" title="Cart">🛒</a>
-        <span class="cart-badge">0</span>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div class="cart-icon-wrap"><a href="cart.html">🛒</a><span class="cart-badge">0</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav>
-    <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productview.html">Shop</a></li>
-      <li><a href="product.html">Categories</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="search.html">Search</a></li>
-    </ul>
-  </nav>
+  <nav><ul id="nav-menu">
+    <li><a href="index.html">Home</a></li><li><a href="productview.html">Shop</a></li>
+    <li><a href="product.html">Categories</a></li><li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="aboutus.html">About Us</a></li><li><a href="cart.html">Cart</a></li><li><a href="search.html">Search</a></li>
+  </ul></nav>
 </header>
 
 <section id="order-confirmation">
   <p style="font-size:3.5rem;">✅</p>
-  <h2>Thank You for Your Order!</h2>
-  <p>Your order has been confirmed and is being processed.</p>
+  <h2>Order Confirmed!</h2>
+  <p>Thank you for shopping with Style Fusion.</p>
   <p><strong>Order Number:</strong> <span id="orderNum"></span></p>
   <p><strong>Status:</strong> Processing</p>
-  <p>You will receive a confirmation email with details shortly.</p>
+  <p>A confirmation email will be sent to you shortly.</p>
   <a href="index.html">← Continue Shopping</a>
 </section>
 
-<footer>
-  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
-</footer>
-
+<footer><p>&copy; 2024 Style Fusion. All rights reserved.</p></footer>
 <script src="script.js"></script>
-<script>
-  // Generate random order number
-  document.getElementById('orderNum').textContent = '#SF' + Math.floor(100000 + Math.random() * 900000);
-</script>
-</body>
-</html>
+<script>document.getElementById('orderNum').textContent='#SF'+Math.floor(100000+Math.random()*900000);</script>
+</body></html>

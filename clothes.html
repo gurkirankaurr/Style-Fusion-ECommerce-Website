@@ -1,89 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clothes – Style Fusion</title>
   <link rel="stylesheet" href="index.css">
-  <meta name="description" content="Browse our Clothes collection at Style Fusion.">
 </head>
 <body>
-
 <header>
   <div class="header-top">
     <h1>Style Fusion</h1>
-    <div style="display:flex;align-items:center;gap:16px;">
-      <div class="cart-icon-wrap">
-        <a href="cart.html" title="Cart">🛒</a>
-        <span class="cart-badge">0</span>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div class="cart-icon-wrap"><a href="cart.html">🛒</a><span class="cart-badge">0</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav>
-    <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productview.html">Shop</a></li>
-      <li><a href="product.html">Categories</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="search.html">Search</a></li>
-    </ul>
-  </nav>
+  <nav><ul id="nav-menu">
+    <li><a href="index.html">Home</a></li><li><a href="productview.html">Shop</a></li>
+    <li><a href="product.html">Categories</a></li><li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="aboutus.html">About Us</a></li><li><a href="cart.html">Cart</a></li><li><a href="search.html">Search</a></li>
+  </ul></nav>
 </header>
 
+<div class="page-hero"><h2>Clothes</h2><p>Contemporary styles for every occasion</p></div>
+
 <main>
-  <div class="categories-section">
-    <h2>Clothes</h2>
-  </div>
   <div class="product-grid">
     <div class="product-item">
       <img src="assets/images/cart1.jpeg" alt="Men's Shirt" loading="lazy">
-      <h3>Men's Shirt</h3>
-      <p class="price">₹499</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Men\'s Shirt', 499, 'assets/images/cart1.jpeg')">Add to Cart</button>
+      <h3>Men's Shirt</h3><p class="price">₹499</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Men\'s Shirt',499,'assets/images/cart1.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/clothes2.jpeg" alt="Women's Cotton Casual Wear" loading="lazy">
-      <h3>Women's Cotton Casual Wear</h3>
-      <p class="price">₹399</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Cotton Casual Wear', 399, 'assets/images/clothes2.jpeg')">Add to Cart</button>
+      <h3>Women's Cotton Casual Wear</h3><p class="price">₹399</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Cotton Casual Wear',399,'assets/images/clothes2.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/clothes3.jpeg" alt="Long White Casual Dress" loading="lazy">
-      <h3>Long White Casual Dress for Women</h3>
-      <p class="price">₹799</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Long White Casual Dress', 799, 'assets/images/clothes3.jpeg')">Add to Cart</button>
+      <h3>Long White Casual Dress</h3><p class="price">₹799</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Long White Casual Dress',799,'assets/images/clothes3.jpeg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/latest3.jpg" alt="Beige Hoodie Unisex" loading="lazy">
-      <h3>Beige Hoodie Unisex</h3>
-      <p class="price">₹899</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Beige Hoodie Unisex', 899, 'assets/images/latest3.jpg')">Add to Cart</button>
+      <h3>Beige Hoodie Unisex</h3><p class="price">₹899</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Beige Hoodie Unisex',899,'assets/images/latest3.jpg')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/shirt.webp" alt="Casual Shirt" loading="lazy">
-      <h3>Casual Shirt</h3>
-      <p class="price">₹549</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Casual Shirt', 549, 'assets/images/shirt.webp')">Add to Cart</button>
+      <h3>Casual Shirt</h3><p class="price">₹549</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Casual Shirt',549,'assets/images/shirt.webp')">Add to Cart</button>
     </div>
     <div class="product-item">
       <img src="assets/images/womenjacket.webp" alt="Women's Jacket" loading="lazy">
-      <h3>Women's Jacket</h3>
-      <p class="price">₹999</p>
-      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Jacket', 999, 'assets/images/womenjacket.webp')">Add to Cart</button>
+      <h3>Women's Jacket</h3><p class="price">₹999</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Jacket',999,'assets/images/womenjacket.webp')">Add to Cart</button>
     </div>
   </div>
 </main>
 
-<footer>
-  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
-</footer>
-
-<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<footer><p>&copy; 2024 Style Fusion. All rights reserved.</p></footer>
+<button id="scrollToTop" onclick="scrollToTop()" style="display:none;">↑</button>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
