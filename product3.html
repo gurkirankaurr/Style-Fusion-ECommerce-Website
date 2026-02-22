@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beige Hoodie – Style Fusion</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="description" content="Buy Beige Hoodie Unisex at Style Fusion.">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Style Fusion</h1>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="cart-icon-wrap">
+        <a href="cart.html" title="Cart">🛒</a>
+        <span class="cart-badge">0</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productview.html">Shop</a></li>
+      <li><a href="product.html">Categories</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="product-view">
+  <div class="product-details">
+    <div class="product-images">
+      <img src="assets/images/latest3.jpg" alt="Beige Hoodie Unisex" loading="lazy">
+    </div>
+    <div class="product-info">
+      <h2>Beige Hoodie Unisex</h2>
+      <p class="price">₹899</p>
+      <p class="description">
+        <strong>Description:</strong> Cozy and stylish unisex hoodie in beige, perfect for casual everyday wear.<br><br>
+        <strong>Material:</strong> 80% Cotton, 20% Polyester — soft, warm and breathable.<br><br>
+        <strong>Size &amp; Fit:</strong> Relaxed oversized fit. Available in S, M, L, XL, XXL.<br><br>
+        <strong>Care:</strong> Machine wash cold, tumble dry low. Do not bleach.
+      </p>
+      <p><strong>Ratings:</strong> ★★★★☆</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center;">
+        <label for="qty" style="font-weight:bold;">Qty:</label>
+        <input type="number" id="qty" value="1" min="1" style="width:60px;padding:6px;border:1px solid #ddd;border-radius:5px;">
+        <button class="add-to-cart" onclick="handleAdd()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="text-align:center;margin:30px 0 16px;">Related Products</h3>
+  <div class="related-products">
+    <div class="product">
+      <img src="assets/images/clothes2.jpeg" alt="Women's Cotton Casual Wear" loading="lazy">
+      <h3>Women's Cotton Casual Wear</h3>
+      <p>₹399</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Women\'s Cotton Casual Wear', 399, 'assets/images/clothes2.jpeg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/images/clothes3.jpeg" alt="Long White Casual Dress" loading="lazy">
+      <h3>Long White Casual Dress</h3>
+      <p>₹799</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Long White Casual Dress', 799, 'assets/images/clothes3.jpeg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/images/shirt.webp" alt="Casual Shirt" loading="lazy">
+      <h3>Casual Shirt</h3>
+      <p>₹549</p>
+      <button class="add-to-cart-btn" onclick="addToCart('Casual Shirt', 549, 'assets/images/shirt.webp')">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Style Fusion. All rights reserved.</p>
+</footer>
+
+<button id="scrollToTop" onclick="scrollToTop()" title="Back to top">↑</button>
+<script src="script.js"></script>
+<script>
+  function handleAdd() {
+    const qty = parseInt(document.getElementById('qty').value) || 1;
+    for (let i = 0; i < qty; i++) {
+      addToCart('Beige Hoodie Unisex', 899, 'assets/images/latest3.jpg');
+    }
+  }
+</script>
+</body>
+</html>
